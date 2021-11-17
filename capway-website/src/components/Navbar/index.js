@@ -1,11 +1,17 @@
 import React from 'react';
 
-export const index = () => {
+const Navbar = () => {
     return (
-        <div>
+        <>
+        <Nav>
+            <NavbarContainer>
+                <NavLogo>
+                    Capway
+                </NavLogo>
+            </NavbarContainer>
+        </Nav>
             
-        </div>
+        </>
     )
 }
-
-
+export default Navbar;
