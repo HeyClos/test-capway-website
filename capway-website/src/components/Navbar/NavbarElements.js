@@ -3,14 +3,18 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: #000;
     height: 80px;
-    margin-top: -80px;
+    background-image: linear-gradient(
+        350deg,
+        #00CC71 30%,
+        #00ACE2 82%
+    );
+    //margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    //position: sticky;
     top: 0;
     z-index: 10;
 
@@ -92,10 +96,10 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
-    background: #01bf71;
+    border-radius: 5px;
+    background: #f8d88b;
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 14px 40px;
     color: #010606;
     font-size: 16px;
     outline: none;

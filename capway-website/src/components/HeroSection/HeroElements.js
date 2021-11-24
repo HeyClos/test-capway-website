@@ -2,14 +2,18 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background-image: linear-gradient(
+        230deg,
+        #00CC71 20%,
+        #00ACE2 80%
+    );
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 30px;
+    padding: 80px 30px;
     height: 800px;
     position: relative;
-    z-index: 1
+    z-index: 1;
 
     :before {
         content: '';
@@ -26,6 +30,10 @@ export const HeroContainer = styled.div`
         linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%)
         z-index: 2;
     }
+
+    @media screen and (max-width: 768px){
+        flex-wrap: wrap;
+    }
 `
 export const HeroBg = styled.div`
     position: absolute;
@@ -37,7 +45,6 @@ export const HeroBg = styled.div`
     height: 100%;
     overflow: hidden;
 `
-
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
@@ -45,19 +52,31 @@ export const VideoBg = styled.video`
     object-fit: cover;
     background: #232a34;
 `
-export const HeroContent = styled.div`
+export const HeroPhone = styled.img`
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+`
+export const HeroContentLeft = styled.div`
     z-index: 3;
-    max-width: 1200px;
-    position: absolute;
+    max-width: 600px;
+    //position: absolute;
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+`
+export const HeroContentRight = styled.div`
+    z-index: 3;
+    max-width: 800px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: left;
 `
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 48px;
-    text-align: center;
+    font-size: 36px;
+    text-align: left;
     @media screen and (max-width: 768px){
         font-size: 40px;
     }
@@ -68,8 +87,8 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
-    font-size: 24px;
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
     max-width: 600px;
     @media screen and (max-width: 768px){
         font-size: 24px;
@@ -78,12 +97,35 @@ export const HeroP = styled.p`
         font-size: 18px;
     }
 `
+export const HeroP2 = styled.p`
+    margin-top: 24px;
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    max-width: 600px;
+    @media screen and (max-width: 768px){
+        font-size: 16px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 12px;
+    }
+`
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
 `
+export const HeroInput = styled.input`
+	background: #ffffff;
+    max-width: 400px;
+    height: 44px;
+    padding: 16px 0;
+	border: none;
+	border-radius: 10px 0 0px 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer
+`;
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
     font-size: 20px;
@@ -92,3 +134,20 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
 `
+
+// export const HeroForm = styled.form`
+//     background: #010101;
+//     max-width: 400px;
+//     height: auto;
+//     width: 100%;
+//     z-index: 1;
+//     display: grid;
+//     margin: 0 auto;
+// 	padding: 80px 32px;
+// 	border-radius: 4px;
+// 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+
+//     @media screen and (max-width: 400px) {
+//         padding: 32px 32px;
+//     }
+// `;

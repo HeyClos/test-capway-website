@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }from 'react';
 //import Icon1 from '../../images/capway_card.svg'
 import { 
     BenefitsContainer, 
@@ -8,7 +8,9 @@ import {
     //BenefitsIcon, 
     BenefitsH2, 
     //BenefitsP
+    BenefitsBtn
 } from './BenefitsElements';
+//import { Button } from '../ButtonElement';
 
 const Benefits = () => {
     // const [hover, setHover] = useState(false);
@@ -19,7 +21,7 @@ const Benefits = () => {
 
     return (
         <BenefitsContainer id="benefits" >
-            <BenefitsH1> Money Account with CapWay </BenefitsH1>
+            <BenefitsH1> oney Account with CapWay </BenefitsH1>
             <BenefitsWrapper> 
                 <BenefitsCard>
                     {/* //<BenefitsIcon> </BenefitsIcon> */}
@@ -32,6 +34,9 @@ const Benefits = () => {
                     <BenefitsH2> Create and save money towards your Money Goals. </BenefitsH2>
                 </BenefitsCard>
             </BenefitsWrapper>
+            <BenefitsBtn>
+                        See all account benefits
+            </BenefitsBtn>
         </BenefitsContainer >
     )
 }

@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import { Button } from '../ButtonElement';
-import Video from '../../videos/video.mp4'
+// import Video from '../../videos/video.mp4';
+import Phone from '../../images/phone-card.png';
 import { 
     HeroContainer, 
-    HeroBg, 
-    VideoBg, 
-    HeroContent,  
+    // HeroBg, 
+    // VideoBg, 
+    HeroContentLeft,  
     HeroH1, 
-    HeroP, 
+    HeroP,
+    HeroP2, 
     HeroBtnWrapper, 
     ArrowForward, 
-    ArrowRight 
+    ArrowRight,
+    HeroPhone,
+    HeroInput, 
+    HeroContentRight
 } from './HeroElements';
 
 const HeroSection = () => {
@@ -22,15 +27,16 @@ const HeroSection = () => {
 
     return (
         <HeroContainer id="home" >
-            <HeroBg>
+            {/* <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} typed='video/mp4' />
-            </HeroBg>
-            <HeroContent>
+            </HeroBg> */}
+            <HeroContentLeft>
                 <HeroH1>Creating Financial Access & Opportunities</HeroH1>
                 <HeroP>
                 No overdraft or minimum balance fees Send and receive money Get paid early Achieve Money Goals Learn money ...and more.
                 </HeroP>
                 <HeroBtnWrapper>
+                    <HeroInput />
                     <Button 
                         to='signup'
                         onMouseEnter={onHover}
@@ -38,10 +44,16 @@ const HeroSection = () => {
                         primary='true'
                         dark='true'
                     >
-                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                        Sign Me Up {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
-            </HeroContent>
+                <HeroP2>
+                    Download for iOS   ·   Download for Android   ·   Why You Should Choose CapWay
+                </HeroP2>
+            </HeroContentLeft>
+            <HeroContentRight>
+                <HeroPhone src={Phone} />
+            </HeroContentRight>
         </HeroContainer >
     )
 }
