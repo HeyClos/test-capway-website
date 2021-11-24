@@ -3,6 +3,7 @@ import Benefits from '../components/Benefits';
 import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import DownloadBar from '../components/DownloadBar'
+import NumbersSection from '../components/NumbersSection'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,6 +18,7 @@ const Home = () => {
             <HeroSection />
             <Benefits />
             <DownloadBar />
+            <NumbersSection />
         </>
     )
 }

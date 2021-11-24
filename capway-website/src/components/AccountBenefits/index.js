@@ -1,5 +1,4 @@
-import React, { useState }from 'react';
-//import Icon1 from '../../images/capway_card.svg'
+import React from 'react';
 import { 
     BenefitsContainer, 
     BenefitsH1, 
@@ -10,18 +9,11 @@ import {
     //BenefitsP
     BenefitsBtn
 } from './BenefitsElements';
-//import { Button } from '../ButtonElement';
 
 const Benefits = () => {
-    // const [hover, setHover] = useState(false);
-
-    // const onHover = () => {
-    //     setHover(!hover)
-    // }
-
     return (
         <BenefitsContainer id="benefits" >
-            <BenefitsH1> oney Account with CapWay </BenefitsH1>
+            <BenefitsH1> Money Account with CapWay </BenefitsH1>
             <BenefitsWrapper> 
                 <BenefitsCard>
                     {/* //<BenefitsIcon> </BenefitsIcon> */}

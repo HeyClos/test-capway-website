@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 export const BenefitsContainer = styled.div`
-    height: 800px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
