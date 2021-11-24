@@ -23,7 +23,8 @@ export const NumbersLeft = styled.div`
 `
 export const LeftH2 = styled.h2`
     height: 50%
-    font-size: 2.5rem;
+    font-size: 20px;
+    font-weight: 520;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,6 +32,7 @@ export const LeftH2 = styled.h2`
 export const LeftP = styled.p`
     height: 50%
     font-size: 2.5rem;
+    font-weight: 400;
     padding: 15px 0;
 `
 export const NumbersRight = styled.div`
